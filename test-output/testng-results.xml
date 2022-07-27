@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[I am in Mpos Test]]>
+    </line>
+    <line>
+      <![CDATA[Username entered]]>
+    </line>
+    <line>
+      <![CDATA[password entered]]>
+    </line>
+    <line>
+      <![CDATA[Login button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Valid login details entered]]>
+    </line>
+    <line>
+      <![CDATA[Login page opened successfully]]>
+    </line>
+    <line>
+      <![CDATA[Home Page Displayed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Billing UI Displayed Successful]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-07-26T15:50:32 IST" name="Default suite" finished-at="2022-07-26T15:52:09 IST" duration-ms="96592">
+    <groups>
+    </groups>
+    <test started-at="2022-07-26T15:50:32 IST" name="Default test" finished-at="2022-07-26T15:52:09 IST" duration-ms="96592">
+      <class name="Test.HomeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:50:32 IST" name="setup" finished-at="2022-07-26T15:50:41 IST" duration-ms="8951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sampleTest()[pri:0, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:50:41 IST" name="sampleTest" finished-at="2022-07-26T15:50:44 IST" duration-ms="3017" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[I am in Mpos Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleTest -->
+        <test-method signature="LoginTest()[pri:1, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:50:44 IST" name="LoginTest" finished-at="2022-07-26T15:51:30 IST" duration-ms="45691" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hom] but found [Home]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hom] but found [Home]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Username entered]]>
+            </line>
+            <line>
+              <![CDATA[password entered]]>
+            </line>
+            <line>
+              <![CDATA[Login button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Valid login details entered]]>
+            </line>
+            <line>
+              <![CDATA[Login page opened successfully]]>
+            </line>
+            <line>
+              <![CDATA[Home Page Displayed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method signature="HomeScreen()[pri:2, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:51:30 IST" name="HomeScreen" finished-at="2022-07-26T15:52:09 IST" duration-ms="38875" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Billing UI Displayed Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- HomeScreen -->
+      </class> <!-- Test.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

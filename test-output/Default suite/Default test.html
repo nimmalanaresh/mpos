@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 26 15:50:32 IST 2022</td>
+<td>Started on:</td><td>Thu Jul 28 10:33:44 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>96 seconds (96592 ms)</td>
+<tr><td>Total time:</td><td>158 seconds (158406 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,39 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test.HomeTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.HomeTest<br/>
-<a href="#Output-1732513254" onClick='toggleBox("Output-1732513254", this, "Show output", "Hide output");'>Show output</a>
+<td title='Test.PriceTypeChangeTest.RetailType()'><b>RetailType</b><br>Test class: Test.PriceTypeChangeTest<br/>
+<a href="#Output-603401608" onClick='toggleBox("Output-603401608", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1732513254" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1732513254">
-Username entered<br/>
-password entered<br/>
-Login button clicked<br/>
-Valid login details entered<br/>
-Login page opened successfully<br/>
-Home Page Displayed Successfully<br/>
+<a href="#Output-603401608" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-603401608">
+Billing UI Displayed Successful<br/>
+Billing<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: expected [Hom] but found [Home]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:44)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.0.134&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [325e47f4-60c6-4731-9432-4e170f939842, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;Address&quot;));}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 325e47f4-60c6-4731-9432-4e170f939842
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at Test.PriceTypeChangeTest.RetailType(PriceTypeChangeTest.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,15 +137,31 @@ Home Page Displayed Successfully<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1732513254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1732513254'><pre>java.lang.AssertionError: expected [Hom] but found [Home]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace603401608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603401608'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-HCVDGHA&apos;, ip: &apos;192.168.0.134&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [325e47f4-60c6-4731-9432-4e170f939842, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;Address&quot;));}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 325e47f4-60c6-4731-9432-4e170f939842
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at Test.PriceTypeChangeTest.RetailType(PriceTypeChangeTest.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,8 +191,8 @@ Home Page Displayed Successfully<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>45</td>
-<td>Test.HomeTest@712625fd</td></tr>
+<td>97</td>
+<td>Test.PriceTypeChangeTest@712625fd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -175,7 +203,7 @@ Home Page Displayed Successfully<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test.HomeTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.HomeTest<br/>
+<td title='Test.PriceTypeChangeTest.sampleTest()'><b>sampleTest</b><br>Test class: Test.PriceTypeChangeTest<br/>
 <a href="#Output-1360332263" onClick='toggleBox("Output-1360332263", this, "Show output", "Hide output");'>Show output</a>
 
 <a href="#Output-1360332263" onClick="toggleAllBoxes();">Show all outputs</a>
@@ -185,19 +213,25 @@ I am in Mpos Test<br/>
 </td>
 <td></td>
 <td>3</td>
-<td>Test.HomeTest@712625fd</td></tr>
+<td>Test.PriceTypeChangeTest@712625fd</td></tr>
 <tr>
-<td title='Test.HomeTest.HomeScreen()'><b>HomeScreen</b><br>Test class: Test.HomeTest<br/>
-<a href="#Output-905650857" onClick='toggleBox("Output-905650857", this, "Show output", "Hide output");'>Show output</a>
+<td title='Test.PriceTypeChangeTest.LoginTest()'><b>LoginTest</b><br>Test class: Test.PriceTypeChangeTest<br/>
+<a href="#Output-1497983329" onClick='toggleBox("Output-1497983329", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-905650857" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-905650857">
-Billing UI Displayed Successful<br/>
+<a href="#Output-1497983329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1497983329">
+Username entered<br/>
+password entered<br/>
+Login button clicked<br/>
+Valid login details entered<br/>
+Login page opened successfully<br/>
+Home Page Displayed Successfully<br/>
+Home<br/>
 </div>
 </td>
 <td></td>
-<td>38</td>
-<td>Test.HomeTest@712625fd</td></tr>
+<td>45</td>
+<td>Test.PriceTypeChangeTest@712625fd</td></tr>
 </table><p>
 </body>
 </html>

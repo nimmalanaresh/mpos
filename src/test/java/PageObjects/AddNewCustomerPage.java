@@ -35,8 +35,14 @@ public class AddNewCustomerPage {
 	@FindBy(xpath="//*[@text='Add New Customer']")
 	public WebElement AddNewCustomer;
 	
+	@FindBy(id="com.ns.mpos.nukkadshops:id/enable_loyalty_switch")
+	public WebElement Loyalty;
 	
 	
+	
+	public void Loyalty() {
+		Loyalty.click();
+	}
 	
 	public void AddCustomerbtn() {
 		AddCustomerbutton.click();

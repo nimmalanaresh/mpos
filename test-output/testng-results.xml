@@ -23,39 +23,93 @@
       <![CDATA[Home Page Displayed Successfully]]>
     </line>
     <line>
+      <![CDATA[Home]]>
+    </line>
+    <line>
       <![CDATA[Billing UI Displayed Successful]]>
     </line>
+    <line>
+      <![CDATA[Billing]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-07-26T15:50:32 IST" name="Default suite" finished-at="2022-07-26T15:52:09 IST" duration-ms="96592">
+  <suite started-at="2022-07-28T10:33:44 IST" name="Default suite" finished-at="2022-07-28T10:36:23 IST" duration-ms="158406">
     <groups>
     </groups>
-    <test started-at="2022-07-26T15:50:32 IST" name="Default test" finished-at="2022-07-26T15:52:09 IST" duration-ms="96592">
-      <class name="Test.HomeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:50:32 IST" name="setup" finished-at="2022-07-26T15:50:41 IST" duration-ms="8951" status="PASS">
+    <test started-at="2022-07-28T10:33:44 IST" name="Default test" finished-at="2022-07-28T10:36:23 IST" duration-ms="158406">
+      <class name="Test.PriceTypeChangeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:33:44 IST" name="setup" finished-at="2022-07-28T10:33:57 IST" duration-ms="12570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sampleTest()[pri:0, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:50:41 IST" name="sampleTest" finished-at="2022-07-26T15:50:44 IST" duration-ms="3017" status="PASS">
+        <test-method signature="sampleTest()[pri:0, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:33:57 IST" name="sampleTest" finished-at="2022-07-28T10:34:00 IST" duration-ms="3022" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[I am in Mpos Test]]>
             </line>
           </reporter-output>
         </test-method> <!-- sampleTest -->
-        <test-method signature="LoginTest()[pri:1, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:50:44 IST" name="LoginTest" finished-at="2022-07-26T15:51:30 IST" duration-ms="45691" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="LoginTest()[pri:1, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:34:00 IST" name="LoginTest" finished-at="2022-07-28T10:34:45 IST" duration-ms="45361" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Username entered]]>
+            </line>
+            <line>
+              <![CDATA[password entered]]>
+            </line>
+            <line>
+              <![CDATA[Login button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Valid login details entered]]>
+            </line>
+            <line>
+              <![CDATA[Login page opened successfully]]>
+            </line>
+            <line>
+              <![CDATA[Home Page Displayed Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Home]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method signature="RetailType()[pri:10, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:34:45 IST" name="RetailType" finished-at="2022-07-28T10:36:23 IST" duration-ms="97348" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [Hom] but found [Home]]]>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-HCVDGHA', ip: '192.168.0.134', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [325e47f4-60c6-4731-9432-4e170f939842, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("Address"));}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 325e47f4-60c6-4731-9432-4e170f939842]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Hom] but found [Home]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at Test.ValidLoginTest.LoginTest(ValidLoginTest.java:44)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-HCVDGHA', ip: '192.168.0.134', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [325e47f4-60c6-4731-9432-4e170f939842, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("Address"));}]
+Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 325e47f4-60c6-4731-9432-4e170f939842
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at Test.PriceTypeChangeTest.RetailType(PriceTypeChangeTest.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,36 +140,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Username entered]]>
-            </line>
-            <line>
-              <![CDATA[password entered]]>
-            </line>
-            <line>
-              <![CDATA[Login button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Valid login details entered]]>
-            </line>
-            <line>
-              <![CDATA[Login page opened successfully]]>
-            </line>
-            <line>
-              <![CDATA[Home Page Displayed Successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method signature="HomeScreen()[pri:2, instance:Test.HomeTest@712625fd]" started-at="2022-07-26T15:51:30 IST" name="HomeScreen" finished-at="2022-07-26T15:52:09 IST" duration-ms="38875" status="PASS">
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Billing UI Displayed Successful]]>
             </line>
+            <line>
+              <![CDATA[Billing]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- HomeScreen -->
-      </class> <!-- Test.HomeTest -->
+        </test-method> <!-- RetailType -->
+      </class> <!-- Test.PriceTypeChangeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

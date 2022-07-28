@@ -13,6 +13,7 @@ import PageObjects.ItemsAddingtoCartPage;
 import PageObjects.MenuSelectionPage;
 import PageObjects.PaymentPage;
 import PageObjects.QuickItemsPage;
+import io.appium.java_client.AppiumBy;
 
 public class PriceTypeChangeTest extends ValidLoginTest{
  
@@ -43,6 +44,11 @@ public class PriceTypeChangeTest extends ValidLoginTest{
 			ANC.CustName(CName);
 			String CMobile =  (String) prop.get("CustMobile");
 			ANC.CustMobile(CMobile);
+			//Thread.sleep(3000);
+			//driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new    UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Enable Customer for Loyalty Points\").instance(1))"));
+			driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Address\"));"));
+			Thread.sleep(3000);
+			ANC.Loyalty();
 			ANC.Save();
 			
 	//Item Adding from QuickItems

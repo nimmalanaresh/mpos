@@ -35,13 +35,14 @@ public class ValidLoginTest extends BaseClass{
 	      Reporter.log("Valid login details entered", true);
 	  	  Reporter.log("Login page opened successfully", true);
 	      
-	  	  Thread.sleep(5000);
+	  	  Thread.sleep(10000);
 	      L.ClickOnAllowbutton();
 	      Reporter.log("Home Page Displayed Successfully");
 	      Thread.sleep(8000);
 	       String Ho = L.Home.getText();
 	       Assert.assertEquals(Ho,"Home");
 	       Reporter.log(Ho, true);
+	       Thread.sleep(4000);
 	      }
 
 

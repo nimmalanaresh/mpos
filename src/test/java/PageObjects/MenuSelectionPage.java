@@ -170,4 +170,10 @@ public class MenuSelectionPage {
 		Reporter.log("Billing UI Displayed Successful", true);
 		
 	}
+	
+	public void RefundFromTranscations() {
+		Openslidermenu();
+		Clickonbillingtab();
+		ClickonTransactionTab();
+	}
 }

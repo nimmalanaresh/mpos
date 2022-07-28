@@ -6,9 +6,14 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
- 
-      
+       <class name="Test.HomeTest"/>
+      <class name="Test.AddNewCustomer"/>
+      <class name="Test.QuickItems"/>
+      <class name="Test.AddItems_From_Searchbar"/>
+      <class name="Test.PaymentTest"/>
       <class name="Test.PriceTypeChangeTest"/>
+       <class name="Test.WholeSalePriceChangeTest"/>
+      <class name="Test.SpecialPriceTypeTest"/>
      
     </classes>
   </test> 

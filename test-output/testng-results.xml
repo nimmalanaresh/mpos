@@ -32,23 +32,23 @@
       <![CDATA[Billing]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-07-28T10:33:44 IST" name="Default suite" finished-at="2022-07-28T10:36:23 IST" duration-ms="158406">
+  <suite started-at="2022-07-28T16:20:24 IST" name="Default suite" finished-at="2022-07-28T16:22:33 IST" duration-ms="128898">
     <groups>
     </groups>
-    <test started-at="2022-07-28T10:33:44 IST" name="Default test" finished-at="2022-07-28T10:36:23 IST" duration-ms="158406">
+    <test started-at="2022-07-28T16:20:24 IST" name="Default test" finished-at="2022-07-28T16:22:33 IST" duration-ms="128898">
       <class name="Test.PriceTypeChangeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:33:44 IST" name="setup" finished-at="2022-07-28T10:33:57 IST" duration-ms="12570" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T16:20:24 IST" name="setup" finished-at="2022-07-28T16:20:31 IST" duration-ms="7324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sampleTest()[pri:0, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:33:57 IST" name="sampleTest" finished-at="2022-07-28T10:34:00 IST" duration-ms="3022" status="PASS">
+        <test-method signature="sampleTest()[pri:0, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T16:20:31 IST" name="sampleTest" finished-at="2022-07-28T16:20:34 IST" duration-ms="3009" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[I am in Mpos Test]]>
             </line>
           </reporter-output>
         </test-method> <!-- sampleTest -->
-        <test-method signature="LoginTest()[pri:1, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:34:00 IST" name="LoginTest" finished-at="2022-07-28T10:34:45 IST" duration-ms="45361" status="PASS">
+        <test-method signature="LoginTest()[pri:1, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T16:20:34 IST" name="LoginTest" finished-at="2022-07-28T16:21:19 IST" duration-ms="44567" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Username entered]]>
@@ -73,27 +73,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method signature="RetailType()[pri:10, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T10:34:45 IST" name="RetailType" finished-at="2022-07-28T10:36:23 IST" duration-ms="97348" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="RetailType()[pri:10, instance:Test.PriceTypeChangeTest@712625fd]" started-at="2022-07-28T16:21:19 IST" name="RetailType" finished-at="2022-07-28T16:22:33 IST" duration-ms="73954" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Could not parse selector expression `new UiScrollable(new UiSelector()).scrollIntoView(id(com.ns.mpos.nukkadshops:id/customTextView20))`: `UiScrollable` doesn't have suitable method `scrollIntoView` with arguments [id(com.ns.mpos.nukkadshops:id/customTextView20)]: Could not parse selector expression `new UiSelector().id(com.ns.mpos.nukkadshops:id/customTextView20)`: UiSelector has no `id` method
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-HCVDGHA', ip: '192.168.0.134', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [325e47f4-60c6-4731-9432-4e170f939842, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("Address"));}]
+Command: [979dcd75-1142-4b1f-908c-07834c52ed7f, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(id(com.ns.mpos.nukkadshops:id/customTextView20));}]
 Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 325e47f4-60c6-4731-9432-4e170f939842]]>
+Session ID: 979dcd75-1142-4b1f-908c-07834c52ed7f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Could not parse selector expression `new UiScrollable(new UiSelector()).scrollIntoView(id(com.ns.mpos.nukkadshops:id/customTextView20))`: `UiScrollable` doesn't have suitable method `scrollIntoView` with arguments [id(com.ns.mpos.nukkadshops:id/customTextView20)]: Could not parse selector expression `new UiSelector().id(com.ns.mpos.nukkadshops:id/customTextView20)`: UiSelector has no `id` method
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-HCVDGHA', ip: '192.168.0.134', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [325e47f4-60c6-4731-9432-4e170f939842, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("Address"));}]
+Command: [979dcd75-1142-4b1f-908c-07834c52ed7f, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(id(com.ns.mpos.nukkadshops:id/customTextView20));}]
 Capabilities {appium:app: D:\Notes\NSPOS\src\mPOS_3_.apk, appium:appPackage: com.ns.mpos.nukkadshops, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Notes\NSPOS\src\mPOS_3_.apk, automationName: uiautomator2, deviceName: manoj123, platformName: android}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 325e47f4-60c6-4731-9432-4e170f939842
+Session ID: 979dcd75-1142-4b1f-908c-07834c52ed7f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -109,7 +109,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at Test.PriceTypeChangeTest.RetailType(PriceTypeChangeTest.java:49)
+at Test.PriceTypeChangeTest.RetailType(PriceTypeChangeTest.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,7 +140,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
             <line>
               <![CDATA[Billing UI Displayed Successful]]>

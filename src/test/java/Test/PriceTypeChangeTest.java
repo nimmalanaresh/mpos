@@ -44,9 +44,10 @@ public class PriceTypeChangeTest extends ValidLoginTest{
 			ANC.CustName(CName);
 			String CMobile =  (String) prop.get("CustMobile");
 			ANC.CustMobile(CMobile);
+			//ANC.Address();
 			//Thread.sleep(3000);
 			//driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new    UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Enable Customer for Loyalty Points\").instance(1))"));
-			driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Address\"));"));
+			driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(id(com.ns.mpos.nukkadshops:id/customTextView20));"));
 			Thread.sleep(3000);
 			ANC.Loyalty();
 			ANC.Save();

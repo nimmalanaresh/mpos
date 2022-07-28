@@ -22,6 +22,8 @@ public class Login extends Baseclass {
 		
 		Assert.assertEquals(bill, "Home");	
 		
+		Thread.sleep(4000);
+		
 	}
 }
 

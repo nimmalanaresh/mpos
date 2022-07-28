@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.Reporter;
+
 import pageobjects.Sidemenupage;
 
 public class Credit extends Login{
@@ -11,6 +13,8 @@ public class Credit extends Login{
 	sm.CreditTab.click();
 	
 	driver.hideKeyboard();
+	
+	Reporter.log("naresh");
 	
 	}
 

@@ -68,7 +68,7 @@ public class NewBill extends ValidLoginTest {
     	 PaymentPage add = new PaymentPage(); 
     	 add.Payment();
     	 
-    	 Reporter.log("hii");
+    	 
 
 
 		

@@ -171,7 +171,7 @@ public class MenuSelectionPage {
 		
 	}
 	
-	public void RefundFromTranscations() throws Throwable {
+	public void Transcations() throws Throwable {
 		Openslidermenu();
 		Thread.sleep(2000);
 		Clickonbillingtab();
@@ -179,4 +179,33 @@ public class MenuSelectionPage {
 		ClickonTransactionTab();
 		Thread.sleep(2000);
 	}
+	
+	public void Settlement() throws Throwable {
+		Openslidermenu();
+		Thread.sleep(2000);
+		Clickonbillingtab();
+		Thread.sleep(2000);
+		ClickonSettlementTab();
+		Thread.sleep(2000);
+		
+	}
+	
+	public void Credit() throws Throwable {
+		Openslidermenu();
+		Thread.sleep(2000);
+		Clickonbillingtab();
+		Thread.sleep(2000);
+		ClickonCreditTab();
+		Thread.sleep(2000);
+	}
+	
+	public void Refund() throws Throwable {
+		Openslidermenu();
+		Thread.sleep(2000);
+		Clickonbillingtab();
+		Thread.sleep(2000);
+		ClickonRefundTab();
+		Thread.sleep(2000);
+	}
+	
 }

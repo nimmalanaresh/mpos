@@ -7,11 +7,11 @@ import PageObjects.Refundpage;
 
 public class Refund extends  ValidLoginTest {
 	@Test(priority=12)
-	public void Refundmethod() throws Throwable {
+	public void RefundfromTransactions() throws Throwable {
 		
 		//Menu Selection 
 		  MenuSelectionPage MSP = new MenuSelectionPage();
-		  MSP.RefundFromTranscations();
+		  MSP.Transcations();
 		  
 		  Refundpage r = new Refundpage();
 		  r.refund();	

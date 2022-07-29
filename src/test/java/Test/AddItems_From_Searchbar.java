@@ -13,7 +13,7 @@ import PageObjects.MenuSelectionPage;
 import PageObjects.QuickItemsPage;
 
 public class AddItems_From_Searchbar extends ValidLoginTest{
-	@Test(priority=8)
+	@Test(priority=6)
 	public void Itemsfromsearchbar() throws Throwable {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	
 		  Properties prop=new Properties();

@@ -12,7 +12,7 @@ import PageObjects.MenuSelectionPage;
 import PageObjects.QuickItemsPage;
 
 public class QuickItems extends ValidLoginTest {
-	@Test(priority=7)
+	@Test(priority=5)
 	public void Quick() throws Throwable {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	
 		  Properties prop=new Properties();

@@ -15,7 +15,7 @@ import PageObjects.PaymentPage;
 import PageObjects.QuickItemsPage;
 
 public class WholeSalePriceChangeTest extends ValidLoginTest{
-	@Test(priority=11)
+	@Test(priority=9)
 	public void Wholesaleprice() throws Throwable {
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	

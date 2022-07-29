@@ -17,7 +17,7 @@ import io.appium.java_client.AppiumBy;
 
 public class PriceTypeChangeTest extends ValidLoginTest{
  
-	@Test(priority=10)
+	@Test(priority=8)
 	public void RetailType() throws Throwable {
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	

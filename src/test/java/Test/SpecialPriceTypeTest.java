@@ -15,7 +15,7 @@ import PageObjects.PaymentPage;
 import PageObjects.QuickItemsPage;
 
 public class SpecialPriceTypeTest extends ValidLoginTest{
-	@Test(priority=12)
+	@Test(priority=10)
 	public void SpecialPrice() throws Throwable {
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	

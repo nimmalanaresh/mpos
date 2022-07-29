@@ -15,7 +15,7 @@ import PageObjects.PaymentPage;
 import PageObjects.QuickItemsPage;
 
 public class NewBill extends ValidLoginTest {
-	@Test(priority=13)
+	@Test(priority=11)
 	public void NewBillIcon() throws Throwable {
 		
 		

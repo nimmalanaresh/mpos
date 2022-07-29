@@ -170,4 +170,13 @@ public class MenuSelectionPage {
 		Reporter.log("Billing UI Displayed Successful", true);
 		
 	}
+	
+	public void RefundFromTranscations() throws Throwable {
+		Openslidermenu();
+		Thread.sleep(2000);
+		Clickonbillingtab();
+		Thread.sleep(2000);
+		ClickonTransactionTab();
+		Thread.sleep(2000);
+	}
 }

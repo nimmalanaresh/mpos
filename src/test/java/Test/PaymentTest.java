@@ -16,7 +16,7 @@ import PageObjects.QuickItemsPage;
 
 
 public class PaymentTest extends ValidLoginTest {
-	@Test(priority=9)
+	@Test(priority=7)
 	public void Payment() throws Throwable {
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\AppiumTest\\NSPOS\\Global.properties");	

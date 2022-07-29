@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Test.BaseClass;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class AddNewCustomerPage {
 	
@@ -39,13 +38,13 @@ public class AddNewCustomerPage {
 	@FindBy(id="com.ns.mpos.nukkadshops:id/enable_loyalty_switch")
 	public WebElement Loyalty;
 	
-	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()).scrollIntoView("
-	        + "new UiSelector().text(\"Address\"))")
-	public WebElement Address;
+//	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()).scrollIntoView("
+//	        + "new UiSelector().text(\"Address\"))")
+//	public WebElement Address;
 	
-	public void Address() {
-		Address.click();
-	}
+//	public void Address() {
+//		Address.click();
+//	}
 	
 	
 	public void Loyalty() {

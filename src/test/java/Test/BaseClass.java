@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -43,6 +44,7 @@ public class BaseClass {
 		System.out.println("Message is : "+exp.getMessage());
 		exp.printStackTrace();
 	}
+    //	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 	}
 	   
@@ -53,17 +55,6 @@ public class BaseClass {
 	     	Thread.sleep(3000);
 	     
 	     }
-	   
-
-//      public void Scrolldown() {
-//	         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));"));
-//      }
-	
-    
-//    @AfterTest
-//    public void end() {
-//    	driver.quit();
-//    }
     	
 }
 

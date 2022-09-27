@@ -49,6 +49,8 @@ public class AddItems_From_Searchbar extends ValidLoginTest{
 	    ItemsAddingtoCartPage IAC = new ItemsAddingtoCartPage();
 	    String Item =  (String) prop.get("ItemName");
 	    IAC.ItemsSearchBar(Item);
+	    Thread.sleep(5000);
+	    IAC.SelectItem();
 	   
 
 	
